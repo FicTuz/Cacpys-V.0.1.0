@@ -68,7 +68,7 @@ static void print_hex(uint32_t value) {
     }
 }
 
-void NORETURN kerpanic(uint32_t error_code, const char* description) {
+void NORETURN kpanic(uint32_t error_code, const char* description) {
     clear_screen();
 
     print_string_attr("[KERPANOS]\n", COLOR_YELLOW);
